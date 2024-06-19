@@ -1,7 +1,7 @@
 .box {
   /*Sets the height and width of the section */
   width: 200px;
-  height: 200px
+  height: 200px;
 }
 
 .box-blue {
@@ -21,4 +21,6 @@
   /* Uses predefined colors to define color */
   color: purple;
   background-color: yellow;
-};
+}
+
+;
