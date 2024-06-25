@@ -16,7 +16,12 @@ header {
 
 /* 
 What happens when we set the display property to flex? 
-TODO: Write your answer here 
+TODO: When we set the display property to flex, 
+the element becomes a flex container. This allows its children (flex items)
+ to be laid out using the flexbox layout model, which provides more efficient 
+ ways to align and distribute space among items within the container, 
+ even when their size is unknown or dynamic.
+
 */
 nav {
   display: flex;
@@ -32,7 +37,11 @@ nav a {
 
 /* 
 What is the flex-wrap property? 
-TODO: Write your answer here 
+TODO:The flex-wrap property controls whether the flex container is a 
+single-line or multi-line container, and the direction in which new lines 
+are stacked. If flex-wrap is set to nowrap, all flex items will be in one
+ line, potentially overflowing the container. If set to wrap, flex items 
+ will wrap onto multiple lines as needed.
 */
 main {
   display: flex;
@@ -56,7 +65,11 @@ footer {
 
 /* 
 What does the justify-content property do? 
-TODO: Write your answer here 
+TODO: The justify-content property aligns the flex items along the main axis 
+(horizontal by default). 
+It defines the distribution of space between and around content items. 
+Common values include flex-start, flex-end, center, space-between, 
+space-around, and space-evenly.
 */
 .products {
   flex: 4;
@@ -70,7 +83,7 @@ TODO: Write your answer here
 /* 
 What is the flex property a shorthand property for?
 What is it doing here? 
-TODO: Write your answer here 
+TODO:  flex: 0 0 400px means the flex item will not grow (flex-grow: 0), will not shrink (flex-shrink: 0), and will have a fixed size of 400px (flex-basis: 400px).
 */
 .card {
   border-style: solid;
@@ -95,7 +108,18 @@ TODO: Write your answer here
 /* 
 What does the flex-direction property define?
 What is it doing here? 
-TODO: Write your answer here 
+TODO:these properties collectively help create a responsive and flexible layout 
+that adapts to different screen sizes and ensures content is displayed 
+appropriately without horizontal scrolling.
+The flex-direction property defines the direction in which the flex 
+items are placed in the flex container. Possible values are row 
+(default, horizontal), row-reverse (horizontal, reversed), column (vertical),
+ and column-reverse (vertical, reversed).
+
+In the provided media query, flex-direction: column changes the direction of 
+the flex container to a vertical layout when the screen width is 768px or 
+less. This means that the flex items will be stacked vertically instead 
+of horizontally, making the layout more suitable for smaller screens.
 */
 @media screen and (max-width: 768px) {
   main,

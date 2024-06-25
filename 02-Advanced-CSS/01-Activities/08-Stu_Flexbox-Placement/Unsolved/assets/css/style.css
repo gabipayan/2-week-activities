@@ -21,7 +21,7 @@ header {
 nav {
   display: flex;
   background-color: #d8a47f;
-}
+justify-content: flex-end;}
 
 nav a {
   color: #13293d;
@@ -50,12 +50,16 @@ footer {
 
 .product-slideshow {
   display: flex;
+  align-items: center; /* the buttons are now in the center*/
 }
+
 
 .product-image {
   width: 100%;
 }
-
+.product-slideshow button.prev {
+  left: 10px;
+}
 .product-details {
   margin-left: 3%;
   flex: 0 0 60%;
@@ -70,7 +74,16 @@ footer {
 
   .product-slideshow button {
     /* Removes the slideshow buttons from the document flow */
-    display: none;
+    position: absolute;
+    font-size: 100%; /* Smaller icons */
+    width: 40px; /* Set width for smaller icons */
+    height: 40px; /* Set height for smaller icons */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for visibility */
+    color: white;
+    border: none;
+    border-radius: 50%;    
   }
 
   .product-details {
